@@ -1283,7 +1283,7 @@ class GoogleFindMyCard extends LitElement {
                         @click=${() => this._setHistoryDays(7)}>7d</button>
               </div>
               <div style="margin-top: 8px; padding-right: 12px;">
-                <input type="number" min="1" .value=${this._historyDays} @input=${(e) => this._setHistoryDays(e.target.valueAsNumber)} />
+                <input style="width: 100%" type="number" min="1" .value=${this._historyDays} @input=${(e) => this._setHistoryDays(e.target.valueAsNumber)} />
               </div>
             </div>
 
