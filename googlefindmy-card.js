@@ -1282,6 +1282,9 @@ class GoogleFindMyCard extends LitElement {
                 <button class="time-range-btn ${this._historyDays === 7 ? 'active' : ''}"
                         @click=${() => this._setHistoryDays(7)}>7d</button>
               </div>
+              <div style="margin-top: 8px; padding-right: 12px;">
+                <input type="number" min="1" .value=${this._historyDays} @input=${(e) => this._setHistoryDays(e.target.valueAsNumber)} />
+              </div>
             </div>
 
             <!-- Accuracy Filter Section -->
